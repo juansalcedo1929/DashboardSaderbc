@@ -1,0 +1,6 @@
+id,region,municipio,indicador,valor,fecha,tendencia
+1,"Norte","Tijuana","Población",1800000,"2024-01",2.5
+2,"Norte","Mexicali","Población",1100000,"2024-01",1.8
+3,"Norte","Tecate","Población",108000,"2024-01",0.8
+4,"Sur","Ensenada","Población",550000,"2024-01",1.2
+5,"Sur","Playas de Rosarito","Población",120000,"2024-01",3.1
