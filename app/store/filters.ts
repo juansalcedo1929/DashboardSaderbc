@@ -4,7 +4,7 @@ export type Filters = {
   region: string
   district: string
   municipality: string
-  office: string
+  origin: string
   species: string
   year: string
 }
@@ -18,7 +18,7 @@ const initialState: Filters = {
   region: 'all',
   district: 'all',
   municipality: 'all',
-  office: 'all',
+  origin: 'all',
   species: 'all',
   year: 'all',
 }
