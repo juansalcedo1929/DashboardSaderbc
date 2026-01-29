@@ -29,14 +29,20 @@ export default function Page() {
       {/* Logo y branding - Versión limpia y profesional */}
       <div className="flex items-center gap-4">
         {/* Logo transparente y limpio */}
-        <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#b17a45]/10 to-transparent rounded-lg"></div>
-          <img 
-            src="/Agricultura.png" 
-            alt="Secretaría de Agricultura y Desarrollo Rural - Gobierno de Baja California"
-            className="h-20 w-auto max-w-[220px] object-contain"
-          />
-        </div>
+ <div className="relative">
+<img 
+  src="/Agricultura.png" 
+  alt="Secretaría de Agricultura y Desarrollo Rural - Gobierno de Baja California"
+  className="
+    h-36
+    w-auto
+    max-w-[420px]
+    object-contain
+  "
+/>
+
+
+</div>
         
         {/* Texto institucional */}
         <div className="space-y-2">
