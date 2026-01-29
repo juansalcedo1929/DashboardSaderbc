@@ -2,6 +2,7 @@ import Filters from './components/Filters'
 import SalesMap from './components/SalesMap'
 import OfficesTable from './components/OfficesTable'
 import ThemeToggle from './components/ThemeToggle'
+import HistoricalChart from './components/HistoricalChart'
 
 // Nueva versión de Page.tsx
 export default function Page() {
@@ -281,6 +282,8 @@ export default function Page() {
         </div>
       </section>
 
+
+
       {/* Mapa + Tabla en layout moderno */}
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Mapa - Card moderna */}
@@ -299,6 +302,10 @@ export default function Page() {
           <div className="h-[400px]">
             <SalesMap />
           </div>
+                {/* ======= Gráfica histórica (añadida) ======= */}
+   
+        <HistoricalChart />
+
         </div>
 
         {/* Tabla - Card moderna */}
