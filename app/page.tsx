@@ -1,11 +1,20 @@
 import Filters from './components/Filters'
 import SalesMap from './components/SalesMap'
 import OfficesTable from './components/OfficesTable'
+import ThemeToggle from './components/ThemeToggle'
 
 // Nueva versión de Page.tsx
 export default function Page() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-[#f6f4f2] via-white to-[#f9f8f7] p-4 md:p-8">
+    <main   className="
+    min-h-screen
+    bg-gradient-to-br
+    from-[#f6f4f2] via-white to-[#f9f8f7]
+    dark:from-[#0f172a] dark:via-[#020617] dark:to-[#020617]
+    p-4 md:p-8
+    transition-colors
+  "
+>
       {/* Header modernizado con gradiente sutil */}
 {/* Header gubernamental moderno con paleta institucional */}
 <header className="relative bg-gradient-to-br from-[#f6f4f2] via-white to-[#f9f8f7] rounded-2xl shadow-lg overflow-hidden mb-8 border border-[#e5e3e1]">
@@ -81,7 +90,9 @@ export default function Page() {
             Exportar Reporte
           </span>
         </button>
+         <ThemeToggle />
       </div>
+      
     </div>
 
     {/* Navegación y métricas */}
@@ -108,24 +119,22 @@ export default function Page() {
             <span>{item.icon}</span>
             <span>{item.name}</span>
           </a>
-        ))}
+        ))}       
       </nav>
-      
+
       {/* Tarjetas de métricas rápidas */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div className="bg-white border border-[#e5e3e1] rounded-xl p-4 hover:shadow-md transition-shadow">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-xs text-gray-500">Municipios Activos</p>
-              <p className="text-2xl font-bold text-[#3c3c3b] mt-1">6</p>
+              <p className="text-2xl font-bold text-[#3c3c3b] mt-1">7</p>
             </div>
             <div className="w-10 h-10 rounded-lg bg-[#6a1c32]/10 flex items-center justify-center">
               <span className="text-[#6a1c32] text-xl">📍</span>
             </div>
           </div>
-          <div className="mt-3 pt-3 border-t border-[#e5e3e1]">
-            <p className="text-xs text-[#b17a45] font-medium">+2 este trimestre</p>
-          </div>
+    
         </div>
         
         <div className="bg-white border border-[#e5e3e1] rounded-xl p-4 hover:shadow-md transition-shadow">
@@ -205,6 +214,8 @@ export default function Page() {
       </div>
     </div>
   </div>
+
+
 </header>
       {/* Filtros en card moderna */}
       <section className="mb-8">
