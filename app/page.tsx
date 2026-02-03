@@ -294,17 +294,7 @@ export default function Page() {
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Mapa - Card moderna */}
         <div className="bg-white rounded-2xl shadow-lg border border-[#e5e3e1] overflow-hidden">
-          <div className="p-6 border-b border-[#e5e3e1]">
-            <div className="flex items-center justify-between">
-              <h2 className="text-lg font-semibold text-[#3c3c3b]">Distribución Geográfica</h2>
-              <div className="flex items-center gap-2">
-                <button className="px-3 py-1 text-sm border border-[#e5e3e1] rounded-lg hover:bg-gray-50 transition-colors">
-                  Vista satélite
-                </button>
-              </div>
-            </div>
-            <p className="text-sm text-gray-500 mt-1">Interactúa con el mapa para ver detalles</p>
-          </div>
+    
           <div className="h-[400px]">
             <SalesMap />
           </div>
